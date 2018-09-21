@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Human Magnetic Reception Experiment</string>
+  </property>
+  <property name="toolTip">
+   <string>HMRE Application</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTesting">
+    <property name="title">
+     <string>Testing</string>
+    </property>
+    <addaction name="actionOutput"/>
+    <addaction name="actionMonitor"/>
+    <addaction name="actionSound_Video"/>
+    <addaction name="actionTest_Vector_Conversions_Math"/>
+    <addaction name="actionTest_Video_Player"/>
+    <addaction name="actionTest_Continuous_Fluxgate_Monitor"/>
+   </widget>
+   <widget class="QMenu" name="menuExperiments">
+    <property name="title">
+     <string>Experiments</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuWindows">
+    <property name="title">
+     <string>Windows</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <addaction name="menuTesting"/>
+   <addaction name="menuExperiments"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuWindows"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOutput">
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionMonitor">
+   <property name="text">
+    <string>Monitor</string>
+   </property>
+  </action>
+  <action name="actionSound_Video">
+   <property name="text">
+    <string>Sound/Video</string>
+   </property>
+  </action>
+  <action name="actionTest_Vector_Conversions_Math">
+   <property name="text">
+    <string>Test Vector Conversions / Math</string>
+   </property>
+  </action>
+  <action name="actionTest_Video_Player">
+   <property name="text">
+    <string>Test Video Player</string>
+   </property>
+  </action>
+  <action name="actionTest_Continuous_Fluxgate_Monitor">
+   <property name="text">
+    <string>Test Continuous Fluxgate Monitor</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
