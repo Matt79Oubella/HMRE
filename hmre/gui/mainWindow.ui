@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Human Magnetic Reception Experiment</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>70</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>System Status</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Audio/Video:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Daq:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Push button:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Off</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Off</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Off</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>798</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuTesting">
+    <property name="title">
+     <string>Testing</string>
+    </property>
+    <addaction name="actionOutput"/>
+    <addaction name="actionMonitor"/>
+    <addaction name="actionSound_Video"/>
+    <addaction name="actionTest_Vector_Conversions_Math"/>
+    <addaction name="actionTest_Video_Player"/>
+    <addaction name="actionTest_Continuous_Fluxgate_Monitor"/>
+   </widget>
+   <widget class="QMenu" name="menuExperiments">
+    <property name="title">
+     <string>Experiments</string>
+    </property>
+    <addaction name="actionDouble_Choice"/>
+    <addaction name="actionFour_Direction"/>
+   </widget>
+   <widget class="QMenu" name="menuHMRE">
+    <property name="title">
+     <string>HMRE</string>
+    </property>
+    <addaction name="actionSystem_Status"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionCalibrate_Zero_Magnetic_Field"/>
+    <addaction name="actionCalibrate_Magnetic_Field_Intensity"/>
+    <addaction name="actionFluxgate_Continuous_Monitor_Window"/>
+    <addaction name="actionRF_Waveform_Generator_Control"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+    <addaction name="actionCascade"/>
+    <addaction name="actionTile_Vertical"/>
+    <addaction name="actionTile_Horizontal"/>
+    <addaction name="separator"/>
+    <addaction name="action1_Sound_Video"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionSettings_Manager"/>
+   </widget>
+   <addaction name="menuHMRE"/>
+   <addaction name="menuTesting"/>
+   <addaction name="menuExperiments"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSound_Video">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Sound/Video</string>
+   </property>
+  </action>
+  <action name="actionDouble_Choice">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Double Choice</string>
+   </property>
+  </action>
+  <action name="actionFour_Direction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Four Direction</string>
+   </property>
+  </action>
+  <action name="actionMonitor">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Monitor</string>
+   </property>
+  </action>
+  <action name="actionTest_Vector_Conversions_Math">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Test Vector Conversions / Math</string>
+   </property>
+  </action>
+  <action name="actionTest_Video_Player">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Test Video Player</string>
+   </property>
+  </action>
+  <action name="actionTest_Continuous_Fluxgate_Monitor">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Test Continuous Fluxgate Monitor</string>
+   </property>
+  </action>
+  <action name="actionOutput">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Zero_Magnetic_Field">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Calibrate Zero Magnetic Field</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Magnetic_Field_Intensity">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Calibrate Magnetic Field Intensity</string>
+   </property>
+  </action>
+  <action name="actionFluxgate_Continuous_Monitor_Window">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fluxgate Continuous Monitor Window</string>
+   </property>
+  </action>
+  <action name="actionRF_Waveform_Generator_Control">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>RF Waveform Generator Control</string>
+   </property>
+  </action>
+  <action name="actionSettings_Manager">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Settings Manager</string>
+   </property>
+  </action>
+  <action name="actionCascade">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Cascade</string>
+   </property>
+  </action>
+  <action name="actionTile_Vertical">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Tile Vertical</string>
+   </property>
+  </action>
+  <action name="actionTile_Horizontal">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Tile Horizontal</string>
+   </property>
+  </action>
+  <action name="action1_Sound_Video">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>1 Sound &amp; Video</string>
+   </property>
+   <property name="toolTip">
+    <string>1 Sound &amp; Video</string>
+   </property>
+  </action>
+  <action name="actionSystem_Status">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>System Status</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionClose</sender>
+   <signal>changed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
